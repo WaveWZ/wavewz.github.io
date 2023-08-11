@@ -1,0 +1,205 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Times New Roman', Times, serif;
+    color:white;
+}
+body{
+    background-image: url('aboutbackground.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+body{
+    background-image: url('aboutbackground.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+}
+
+#logo {
+    font-size: 1.5em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+}
+
+#navbar2 {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+#navbar2 li {
+    padding: 20px;
+}
+
+#navbar2 li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+}
+nav{
+    margin-right: 20px;
+}
+.box {
+    border: 1px solid white;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 0 auto;
+}
+section{
+    text-align: center;
+    padding-left:38%;
+    padding-top:6%;
+    opacity:0.9;
+}
+.aboutMe {
+    padding-top: 20px;
+}
+#text{
+    font-size: 1.3em;
+    padding-bottom: 5%;
+}
+.contact-form{
+    flex-wrap: nowrap;
+    display:inline;
+    justify-content: flex-end;
+}
+.contact-form ul{
+    text-decoration: none;
+    list-style-type: none;
+    display:flex;
+    padding-left:35%;
+    width: 350px;
+    overflow: auto;
+}
+
+.contact-form ul li{
+    width: 20%;
+    float: left;
+    margin: 3.5%;
+}
+
+
+
+@media (max-width:804px){    
+    #logo{
+        align-self:center;
+        font-size:1.5em;
+        max-width: 13%;
+        max-height: 13%;
+        margin-top:5%;
+        margin-bottom: 25%;
+        justify-content: center;
+        color:black;
+        position: absolute;
+        left:34%;
+        padding-top: 12px;
+        max-width: 6em;
+    }
+    nav{
+        display:flex;
+        justify-content: center;
+        margin-right: 0;
+        
+    }
+    ul li{
+        list-style: none;
+        display:flex;
+        padding: 29px;
+        padding-top: 36px;
+    }
+    ul li a{
+        text-decoration: none;
+        color:black;
+        padding-top:30px;
+        font-size: 1em;                                  
+    }
+    #text{
+        font-size:1em;
+        display: flex;
+    }
+    #navbar{
+        padding-top:25px;
+    }
+    ul li a{
+        font-size: 1em;
+        padding-top:30px;
+    }
+    #logo1{
+        padding-right:30%;
+    }
+    #logo1 {
+        padding: 20px 0 0 0;
+        max-width: 38px;
+        height: auto; /* Otomatik yükseklik ayarı */
+        float: left;
+        padding-left:21%;
+    }
+    #logo2{
+        padding-bottom: 0px;
+        max-width: 27px;
+    }
+    #logo3{
+        max-width: 21px;
+        padding-bottom:0px;
+        padding-left: 36%;
+    }
+    #logo4{
+        max-width: 2%;
+        padding-left: 51%;
+        padding-bottom: 3px;
+    }
+    .contactLogos{
+        position: absolute;
+        bottom:14%;
+        left:18%;
+    }
+    section{
+        text-align: center;
+        padding-left:8%;
+        padding-right:8%;
+        padding-top:6%;
+        opacity:0.9;
+    }
+    .contact-form ul li {
+        width: 20%;
+        float: left;
+        margin: 0%;
+    }
+    .contactLogos {
+        position: absolute;
+        bottom: 4%;
+        left: 18%;
+    }
+    
+
+}
+@media (min-width: 805px) and (max-width: 872px) {
+    body{
+        background-position:center 6%;
+    }
+    #logo{
+        max-width:7em;
+    }
+    #firstText{
+        font-size: 5.5em;
+        padding-top:15%;
+    }
+    #secondText{
+        font-size: 3.9em;
+    }
+    #thirdText{
+        font-size: 5.5em;
+    }
+    #fourthText{
+        font-size: 3.9em;
+    }
+}
