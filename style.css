@@ -38,11 +38,7 @@ ul li a{
 nav{
     margin-right: 40px;
 }
-.container{
-    /* scroll-snap-type: y mandatory;
-    overflow-y: scroll;
-    */
-}
+
 .pages{
     scroll-snap-type: start;
 }
@@ -74,7 +70,6 @@ nav{
     color: #fad200;
     text-align: center;
     padding-top:7%;
-    opacity:0.9;
 }
 #firstText{
     margin-top: 80px;
