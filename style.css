@@ -13,7 +13,7 @@ header {
     padding-left:25px;
 }
 #logo{
-    padding: 14px 0px 0px 14px;
+    padding: 40px 0px 0px 40px;
     font-size:1.5em;
     font-family:Georgia, 'Times New Roman', Times, serif;
     float:left;
@@ -36,7 +36,7 @@ ul li a{
     font-size: 1.2em;                                   
 }
 nav{
-    margin-right: 40px;
+    margin-right: 45px;
 }
 
 .pages{
@@ -152,17 +152,25 @@ nav{
         max-width: 11%;
         max-height: 11%;
         display: block;
+        display:flex;
+        justify-content: center;
+    }
+    nav{
+        display:flex;
+        justify-content: center;
+        margin-right: 0;
     }
     ul li{
         list-style: none;
         display:flex;
-        padding: 33px;
+        padding: 29px;
+        padding-top: 36px;
     }
     ul li a{
         text-decoration: none;
         color:black;
-        padding-top:23px;
-        font-size: 1.2em;                                   
+        padding-top:28px;
+        font-size: 1.2em;                                  
     }
     #github{
         display: none;
@@ -223,6 +231,7 @@ nav{
         bottom:0%;
         left:18%;
     }
+
 }
 @media (min-width: 805px) and (max-width: 872px) {
     body{
