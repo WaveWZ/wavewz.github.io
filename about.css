@@ -100,8 +100,8 @@ section{
         justify-content: center;
         color:black;
         position: absolute;
-        left:34%;
-        padding-top: 12px;
+        left:32%;
+        padding-top: 25px;
         max-width: 6em;
     }
     nav{
@@ -182,24 +182,19 @@ section{
     
 
 }
-@media (min-width: 805px) and (max-width: 872px) {
-    body{
-        background-position:center 6%;
+@media (min-width: 805px) and (max-width: 1400px) {
+    *{
+        color:black;
     }
     #logo{
         max-width:7em;
     }
-    #firstText{
-        font-size: 5.5em;
-        padding-top:15%;
+    section{
+        display: inline;
+        text-align: center;
     }
-    #secondText{
-        font-size: 3.9em;
+    header{
+        margin-bottom:10%;
     }
-    #thirdText{
-        font-size: 5.5em;
-    }
-    #fourthText{
-        font-size: 3.9em;
-    }
+
 }

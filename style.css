@@ -1,10 +1,8 @@
+
 *{
     padding: 0px;
     margin: 0px;
     font-family: 'Times New Roman', Times, serif;
-}
-body{
-
 }
 header {
     display: flex;
@@ -80,6 +78,7 @@ nav{
     font-weight: 600;
     letter-spacing: -5px;
 }
+
 #secondText{
     font-size:5em;
     font-style: italic;
@@ -103,17 +102,17 @@ nav{
     background-color:#fad200;
     opacity:0.6;
     height:43px;
-    width: 100%; /* Container'ın genişliğini belirleme */
+    width: 100%; 
     position:absolute;
     bottom:0px;
     text-align:center;
-    /*margin-top: 13%;*/
-    border: 0px solid #fad200; /* Kenarlık ekleme */
+    border: 0px solid #fad200; 
 }
+
 #logo1 {
     padding: 20px 0 0 18px;
     max-width: 35px;
-    height: auto; /* Otomatik yükseklik ayarı */
+    height: auto; 
     float: left;
     padding-left:6%;
 }
@@ -121,6 +120,7 @@ nav{
     padding-bottom: 0px;
     
 }
+
 #logo3{
     max-width: 3%;
     padding-bottom:0px;
@@ -131,15 +131,16 @@ nav{
     padding-left: 16%;
     padding-bottom: 3px;
 }
+
 .contactLogos{
     position: absolute;
     bottom:0%;
     left:40%;
 }
+
 .contact-form #logo1 a img{
     width:100%;
 }
-
 
 
 @media (max-width:804px){    
@@ -208,7 +209,7 @@ nav{
     #logo1 {
         padding: 20px 0 0 0;
         max-width: 35px;
-        height: auto; /* Otomatik yükseklik ayarı */
+        height: auto; 
         float: left;
         padding-left:22%;
     }
@@ -233,6 +234,7 @@ nav{
     }
 
 }
+
 @media (min-width: 805px) and (max-width: 872px) {
     body{
         background-position:center 6%;
