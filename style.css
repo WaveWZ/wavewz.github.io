@@ -24,7 +24,7 @@ ul{
 ul li{
     list-style: none;
     display: flex;
-    padding: 20px;
+    padding:20px;
     float:right;
 }
 ul li a{
@@ -101,7 +101,7 @@ nav{
     display:flex;
     background-color:#fad200;
     opacity:0.6;
-    height:43px;
+    height:48px;
     width: 100%; 
     position:absolute;
     bottom:0px;
@@ -109,38 +109,44 @@ nav{
     border: 0px solid #fad200; 
 }
 
+.contactLogos{
+    margin-left:60px;
+    align-items:center;
+    padding:0px;
+    float:left;
+
+}
+.footerLogos{
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    padding-left: 38%;
+    align-items: center;
+    height: 100%; /* Ensure the parent container takes up the full height */
+}
+
 #logo1 {
-    padding: 20px 0 0 18px;
-    max-width: 35px;
-    height: auto; 
-    float: left;
-    padding-left:6%;
+    display: block;
+    margin-bottom: 0px;
+    margin-top:4px;
 }
 #logo2{
-    padding-bottom: 0px;
-    
+    display:block;
+    margin-bottom:auto;
+    margin-top:4px;
 }
-
 #logo3{
-    max-width: 3%;
-    padding-bottom:0px;
-    padding-left: 11%;
+    display:block;
+    margin-bottom:auto;   
+    margin-top:4px;
 }
 #logo4{
-    max-width: 4%;
-    padding-left: 16%;
-    padding-bottom: 3px;
+    display:block;
+    margin-bottom:0px;
+    margin-top:7px;
+    /*margin-left:780px;*/
 }
-
-.contactLogos{
-    position: absolute;
-    bottom:0%;
-    left:40%;
-}
-
-.contact-form #logo1 a img{
-    width:100%;
-}
+    
 
 
 @media (max-width:804px){    
@@ -204,33 +210,17 @@ nav{
         font-size: 2em;
     }
     #logo1{
-        padding-right:30%;
-    }
-    #logo1 {
-        padding: 20px 0 0 0;
-        max-width: 35px;
-        height: auto; 
-        float: left;
-        padding-left:22%;
-    }
-    #logo2{
-        padding-bottom: 0px;
-        max-width: 27px;
-    }
-    #logo3{
-        max-width: 21px;
-        padding-bottom:0px;
-        padding-left: 36%;
+        padding-left:70%;
     }
     #logo4{
-        max-width: 2%;
-        padding-left: 51%;
-        padding-bottom: 3px;
+        padding-bottom:5px;
     }
     .contactLogos{
-        position: absolute;
-        bottom:0%;
-        left:18%;
+        padding:0px;
+        margin-left:20px;
+    }
+    .footerLogos{
+        padding-left: 1%;   
     }
 
 }
@@ -255,9 +245,15 @@ nav{
     #fourthText{
         font-size: 3.9em;
     }
+    .contactLogos{
+        margin-left:50px;
+    }
+    .footerLogos{
+        padding-left: 31%;   
+    }
 }
 
-@media (min-width: 873px) and (max-width: 1105px) {
+@media (min-width: 873px) and (max-width: 1305px) {
     body{
         background-position:center 10%;
     }
@@ -276,5 +272,11 @@ nav{
     }
     #fourthText{
         font-size: 4em;
+    }
+    .contactLogos{
+        margin-left:50px;
+    }
+    .footerLogos{
+        padding-left: 31%;   
     }
 }
