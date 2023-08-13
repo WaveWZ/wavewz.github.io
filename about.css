@@ -10,12 +10,6 @@ body{
     background-size: cover;
     height: 100vh;
 }
-body{
-    background-image: url('aboutbackground.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-}
 
 #navbar {
     display: flex;
@@ -110,6 +104,12 @@ section{
         margin-right: 0;
         
     }
+    #navbar2 li{
+        padding:18px;
+    }
+    #navbar2 li a{
+        font-size:1.1em;
+    }
     ul li{
         list-style: none;
         display:flex;
@@ -129,14 +129,9 @@ section{
     #navbar{
         padding-top:25px;
     }
-    ul li a{
-        font-size: 1em;
-        padding-top:30px;
-    }
-    #logo1{
-        padding-right:30%;
-    }
+
     #logo1 {
+        padding-right:30%;
         padding: 20px 0 0 0;
         max-width: 38px;
         height: auto; /* Otomatik yükseklik ayarı */
