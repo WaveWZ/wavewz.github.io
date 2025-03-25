@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie API</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        h1{
+            margin-bottom: 1em;
+        }
+        .cont{
+            position: absolute;
+            top: 10px;
+            background: white;      
+            padding: 1em;
+            border-radius: 10px;
+            text-align: center;
+
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .input-group{
+            display: flex;
+            gap: 10px;
+            margin-top: 1em;
+        }
+
+        input{
+            padding: 10px;
+            border: 2px solid #ddd;
+            width: 240px;
+
+            border-radius: 5px;
+            font-size: 1em;
+        }
+
+        button{
+            padding: 10px 15px;
+            border: none;
+            background-color: #007BFF;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+
+            font-size: 1em;
+        }
+        #randomButton {
+            margin-top: 10px;
+            background-color: #28a745;
+        }
+        .movie {
+            width: 260px; 
+            margin: 10px auto;
+            padding: 20px;       
+            background: white;
+            text-align: center;
+            border-radius: 10px;
+            margin-top: 14em;
+        }
+
+        .movie img {
+            width: 100%;  
+            border-radius: 10px;
+            margin-bottom: 10px; 
+        }
+
+        .movie h3 {
+            color: #333;
+            font-size: 1.4em;
+            margin-bottom: 6px;
+        }
+
+        .movie h5 {
+            font-size: 1em;
+            color: #666;
+            margin: 5px 0;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="cont">
+        <h1>Search for a Movie</h1>
+        <div class="input-group">   
+            <input type="text" id="title_input" placeholder="Enter movie name">
+            <button onclick="searchFilm()">Search</button>
+        </div>
+        <button id="randomButton" onclick="getRandomFilm()">Get Random Movie</button>
+    </div>
+    <div class="movie">
+        <h3 id="movie_title">Movie Title</h3>
+        <h5 id="movie_year">Year: </h5>
+        <h5 id="movie_type">Type: </h5>
+        <h5 id="movie_writer">Writer: </h5>
+        <img id="movie_image" src="" alt="Poster">
+    </div>
+
+    <script>
+        async function getir(url){
+            const response = await fetch(url);
+            const result = await response.json();
+            return result;
+        }
+
+        async function searchFilm(){
+            const title = document.getElementById("title_input").value;
+            const myurl = `https://www.omdbapi.com/?t=${title}&apikey=338690df`;
+            const answer = await getir(myurl); 
+
+            if(answer.Response === "True"){
+                const movieData = {
+                    title: answer["Title"],
+                    year: answer["Year"],
+                    genre: answer["Genre"],
+                    writer: answer["Writer"],
+                    img: answer["Poster"]
+                };
+
+                
+                document.getElementById("movie_title").innerText = movieData.title;
+                document.getElementById("movie_year").innerText = `Year: ${movieData.year}`;
+                document.getElementById("movie_type").innerText = `Type: ${movieData.genre}`;
+                document.getElementById("movie_writer").innerText = `Writer: ${movieData.writer}`;
+                document.getElementById("movie_image").src = movieData.img;
+
+            }else{
+                alert("There is no Movie like that.");
+            }
+        }
+
+        function getRandomFilm(){
+            const randMovie = ["Inception" , "Titanic" , "Selena",  "Interstellar", "Kolpacino"];
+
+            const randTitle = randMovie[Math.floor(Math.random() * randMovie.length)];
+            document.getElementById("title_input").value = randTitle; 
+
+            searchFilm();
+
+        }
+    </script>
+
+</body>
+</html>
